@@ -1,0 +1,57 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="{% static 'picture/lam.jpg' %}"  class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: red">Aventador LP 780</h5>
+          <p style="color: red">V12 engine and the extensive use of carbon fiber</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static 'picture/amg.jpg' %}" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: red">AMG GT</h5>
+          <p style="color: red">A twin-turbo 4.0-liter V-8 and a seven-speed dual-clutch automatic</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static 'picture/porche.jpg' %}"  class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: red">Taycan GTS Sport</h5>
+          <p style="color: red">A 800-volt architecture produces charge power of up tp 270 kw</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'picture/p1.jpg' %}"  class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: red">Mclaren P1</h5>
+          <p style="color: red">Building a car that pushes as many boundaries as the P1™ requires a test and validation process like no other.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" >
+      <span class="carousel-control-next-icon" aria-hidden="true" style="color: red"></span>
+      <span class="visually-hidden" style="color: red">Next</span>
+    </button>
+  </div>
+
+
+
+    
+{% endblock %}
