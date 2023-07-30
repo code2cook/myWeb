@@ -3,16 +3,13 @@ from django.urls import path, include
 from . import views
 
 
-
-
-
 urlpatterns = [
     path('', views.home, name='home'),
     path('home/', views.home, name='home'),
     
-    # path("register/", views.register, name="register"),
-    # path('login/', view.user_login, name='login'),
     
+   
+    # path('logout/', views.sign_out, name='logout'),
     
     
     # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
@@ -28,4 +25,8 @@ urlpatterns = [
    # path('post/<int:pk>/', views.post_detail, name='post_detail'),
    # path('post/new/', views.post_new, name='post_new'),
    # path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
+   
+   path('register/', views.register_user, name='register'),
+   path('login/', views.user_login, name='login'),
+   path('profile/', views.profile, name='profile'),
 ]
