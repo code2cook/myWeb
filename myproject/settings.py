@@ -40,10 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'myBlog',
+    'corsheaders',
     # 'myBlog.apps.MyblogUserConfig',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+
+CORS_ALLOWED_ORIGINS = [
+    "https://myblogs.click",
+    # Add other trusted origins if needed
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
