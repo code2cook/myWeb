@@ -50,6 +50,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://myblogs.click",
     # Add other trusted origins if needed
 ]
+
+CSRF_COOKIE_DOMAIN = None
+CSRF_COOKIE_SECURE = True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
