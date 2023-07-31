@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-
+CSRF_TRUSTED_ORIGINS = ['https://myblogs.click']
 CORS_ALLOWED_ORIGINS = [
     '*',
     'https://myblogs.click',
