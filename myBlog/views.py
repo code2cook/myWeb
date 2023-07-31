@@ -2,19 +2,19 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
 from .forms import UserRegistrationForm, UserProfileForm, LoginForm
-
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
 
-
+@csrf_exempt
 def home(request):
     return render(request, 'home.html')
 
-
+@csrf_exempt
 def resume(request):
     return render(request, 'resume.html')
-
+@csrf_exempt
 def register_user(request):
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
@@ -33,7 +33,7 @@ def register_user(request):
         profile_form = UserProfileForm()
 
     return render(request, 'register.html', {'user_form': user_form, 'profile_form': profile_form})
-
+@csrf_exempt
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -51,6 +51,6 @@ def user_login(request):
         form = LoginForm()
 
     return render(request, 'login.html', {'form': form})
-
+@csrf_exempt
 def profile(request):
     return render(request, 'profile.html')
