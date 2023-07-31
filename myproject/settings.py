@@ -47,7 +47,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://myblogs.click",
+    '*',
+    'https://myblogs.click',
     # Add other trusted origins if needed
 ]
 
