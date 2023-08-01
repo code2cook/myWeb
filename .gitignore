@@ -1,0 +1,57 @@
+# Ignore database files
+db.sqlite3
+
+# Ignore local settings
+settings_local.py
+
+# Ignore static and media files
+staticfiles/
+media/
+
+# Ignore temporary files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore development-specific files
+.env
+.vscode/
+*.pydevproject
+*.pyc
+*.idea/
+*.swo
+*.swp
+
+# Ignore logs and error reports
+logs/
+*.log
+*.pot
+
+# Ignore sensitive information
+*.secret
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Ignore the virtual environment
+venv/
+.env/
+
+# Ignore the local development server
+*.runserver.pid
+
+# Ignore coverage reports
+htmlcov/
+
+# Ignore data backups
+*.bak
+*.backup
+
